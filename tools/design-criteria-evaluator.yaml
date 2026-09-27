@@ -1,0 +1,33 @@
+name: design-criteria-evaluator
+description: Evaluates overall design challenge deliverables against Minimum Design Criteria (MDC) and generates OpenCode leaderboard feedback.
+parameters:
+  type: object
+  properties:
+    task_number:
+      type: integer
+      description: Challenge task number (e.g., 1 for loader, 2 for tab-navigation).
+    contributor_handle:
+      type: string
+      description: GitHub username of the contributor.
+    has_figma_link:
+      type: boolean
+      description: Valid public Figma link provided.
+    has_video_preview:
+      type: boolean
+      description: Demo video or GIF included.
+    passed_auto_layout:
+      type: boolean
+      description: Auto-Layout requirements satisfied.
+    passed_variants:
+      type: boolean
+      description: Required interactive variants created.
+    passed_wcag_contrast:
+      type: boolean
+      description: Meets WCAG 2.1 AA text contrast threshold.
+  required:
+    - task_number
+    - contributor_handle
+    - has_figma_link
+    - has_video_preview
+    - passed_auto_layout
+    - passed_variants

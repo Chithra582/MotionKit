@@ -1,0 +1,43 @@
+name: prototype-flow-auditor
+description: Audits Figma prototyping connections, transition triggers, Smart Animate easing types, and animation durations.
+parameters:
+  type: object
+  properties:
+    flow_name:
+      type: string
+      description: Name of the prototype flow.
+    interactions:
+      type: array
+      items:
+        type: object
+        properties:
+          source_node_id:
+            type: string
+          destination_node_id:
+            type: string
+          trigger:
+            type: string
+            enum:
+              - on_click
+              - while_hovering
+              - while_pressing
+              - on_drag
+              - after_delay
+          animation_type:
+            type: string
+            enum:
+              - instant
+              - dissolve
+              - smart_animate
+              - slide_in
+          duration_ms:
+            type: integer
+          easing:
+            type: string
+        required:
+          - trigger
+          - animation_type
+      description: Array of interaction connections in the prototype.
+  required:
+    - flow_name
+    - interactions

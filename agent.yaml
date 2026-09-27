@@ -1,0 +1,65 @@
+spec_version: "0.1.0"
+name: "motionkit-agent"
+version: "1.0.0"
+description: >
+  Autonomous Figma UI/UX component engineering, interactive prototyping, design systems auditing,
+  and micro-interaction verification agent for MotionKit (OpenCode '25). Inspects Auto-Layout
+  responsiveness, validates component variant states (hover, pressed, disabled), audits minimum
+  design criteria (MDC), and coordinates motion prototyping standards.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "gemini-2.0-flash"
+  fallback:
+    - "gpt-4o"
+    - "claude-3-5-sonnet"
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+
+skills:
+  - figma-component-architect
+  - interactive-prototype-validator
+  - design-system-auditor
+  - motion-interaction-evaluator
+
+tools:
+  - component-variant-checker
+  - auto-layout-verifier
+  - prototype-flow-auditor
+  - design-criteria-evaluator
+
+runtime:
+  max_turns: 10
+  temperature: 0.2
+  timeout: 120
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - ferpa
+    - gdpr
+  data_governance:
+    pii_handling: redact
+    data_classification: internal
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - figma
+  - ui-ux
+  - prototyping
+  - design-systems
+  - auto-layout
+  - motion-design
+  - education
+
+metadata:
+  domain: "ui-ux-design"
+  category: "Education"

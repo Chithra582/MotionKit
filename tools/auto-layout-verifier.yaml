@@ -1,0 +1,48 @@
+name: auto-layout-verifier
+description: Inspects Figma frame layout modes, horizontal/vertical stacking directions, padding scales, and responsive resizing constraints.
+parameters:
+  type: object
+  properties:
+    frame_name:
+      type: string
+      description: Name of the frame under inspection.
+    layout_mode:
+      type: string
+      enum:
+        - horizontal
+        - vertical
+        - none
+      description: Auto-Layout stacking orientation.
+    horizontal_sizing:
+      type: string
+      enum:
+        - hug
+        - fill
+        - fixed
+      description: Horizontal resizing constraint.
+    vertical_sizing:
+      type: string
+      enum:
+        - hug
+        - fill
+        - fixed
+      description: Vertical resizing constraint.
+    padding_values:
+      type: object
+      properties:
+        top:
+          type: integer
+        right:
+          type: integer
+        bottom:
+          type: integer
+        left:
+          type: integer
+        gap:
+          type: integer
+      description: Spacing values in pixels.
+  required:
+    - frame_name
+    - layout_mode
+    - horizontal_sizing
+    - vertical_sizing

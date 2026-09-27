@@ -7,6 +7,10 @@
 
   [![Figma](https://img.shields.io/badge/Main_Tool-Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/)
   [![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com/)
+  [![OpenGAP Spec](https://img.shields.io/badge/OpenGAP-0.1.0-blue.svg)](agent.yaml)
+  [![GitAgent Passport Ready](https://img.shields.io/badge/GitAgent%20Passport-Ready-green.svg)](https://app.hidevs.xyz/passport/submit)
+  [![Category](https://img.shields.io/badge/Category-Education-purple.svg)](agent.yaml)
+  [![Compliance](https://img.shields.io/badge/Compliance-FERPA%20%7C%20GDPR-orange.svg)](EXPLAINABILITY.md)
 
   <p>
     <b>Goal:</b> To learn and practice UI Component Creation, Auto-Layout, Variants, Design Systems, and Interactive Prototyping in Figma — taking you from beginner to intermediate level.
@@ -55,6 +59,29 @@ Once you are confident in your work:
 * Wait for the review!
 
 For more details on the workflow, check out [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow).
+
+---
+
+## 🤖 GitAgent Passport Qualification
+
+This repository is compliant with the **OpenGAP Spec 0.1.0** standard and qualified for the [HiDevs GitAgent Passport](https://app.hidevs.xyz/passport/submit).
+
+### Clearance Checkpoints Summary
+
+| Checkpoint | Status | Focus Area | Artifact |
+| :--- | :--- | :--- | :--- |
+| **Checkpoint 1: Validate** | `PASSED` | Schema, Soul, Skills, Tools | [`agent.yaml`](agent.yaml), [`SOUL.md`](SOUL.md), [`skills/`](skills/), [`tools/`](tools/) |
+| **Checkpoint 2: Explain** | `PASSED` | Decision Logic, Data Usage, Limitations | [`EXPLAINABILITY.md`](EXPLAINABILITY.md) |
+| **Checkpoint 3: Export** | `PASSED` | Interoperability & Tool Schemas | [`tools/`](tools/), [`RULES.md`](RULES.md), [`DUTIES.md`](DUTIES.md) |
+
+### Agent Architecture Overview
+
+- **Identity & Ethics**: [`SOUL.md`](SOUL.md) defines core behavioral traits, design systems mentoring ethos, anti-plagiarism stance, and apprentice growth advocacy.
+- **Operational Rules**: [`RULES.md`](RULES.md) establishes absolute constraints against plagiarism, enforces task folder isolation, requires Auto-Layout, and ensures FERPA/GDPR student privacy.
+- **Role Duties**: [`DUTIES.md`](DUTIES.md) defines step-by-step responsibilities across challenge brief parsing, component variant state checks, interactive motion verification, and Minimum Design Criteria (MDC) scoring.
+- **Transparent Reasoning**: [`EXPLAINABILITY.md`](EXPLAINABILITY.md) documents step-by-step rationale, design quality formulas, MDC pass/fail conditions, and operational boundaries.
+- **Modular Skills**: Located in [`skills/`](skills/) for component architecture, prototype flow validation, design system token auditing, and motion interaction evaluation.
+- **Tool Schemas**: Standardized JSON schemas located in [`tools/`](tools/) for variant checking, Auto-Layout inspection, prototype flow auditing, and MDC criteria scoring.
 
 ---
 

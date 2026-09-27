@@ -1,0 +1,34 @@
+name: component-variant-checker
+description: Verifies Figma component set variant states, property naming conventions, and layer naming consistency for Smart Animate.
+parameters:
+  type: object
+  properties:
+    component_name:
+      type: string
+      description: Name of the component set (e.g., 'Button', 'Dropdown', 'TabBar').
+    variants:
+      type: array
+      items:
+        type: object
+        properties:
+          state_name:
+            type: string
+          properties:
+            type: object
+          layer_count:
+            type: integer
+        required:
+          - state_name
+      description: List of defined states within the component set.
+    required_states:
+      type: array
+      items:
+        type: string
+      default:
+        - default
+        - hover
+        - pressed
+      description: Mandatory interactive states that must be present.
+  required:
+    - component_name
+    - variants
