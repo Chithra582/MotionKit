@@ -1,6 +1,6 @@
 name: auto-layout-verifier
 description: Inspects Figma frame layout modes, horizontal/vertical stacking directions, padding scales, and responsive resizing constraints.
-parameters:
+input_schema:
   type: object
   properties:
     frame_name:

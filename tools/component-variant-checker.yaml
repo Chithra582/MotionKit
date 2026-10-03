@@ -1,6 +1,6 @@
 name: component-variant-checker
 description: Verifies Figma component set variant states, property naming conventions, and layer naming consistency for Smart Animate.
-parameters:
+input_schema:
   type: object
   properties:
     component_name:

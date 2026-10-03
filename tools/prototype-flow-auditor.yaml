@@ -1,6 +1,6 @@
 name: prototype-flow-auditor
 description: Audits Figma prototyping connections, transition triggers, Smart Animate easing types, and animation durations.
-parameters:
+input_schema:
   type: object
   properties:
     flow_name:

@@ -1,6 +1,6 @@
 name: design-criteria-evaluator
 description: Evaluates overall design challenge deliverables against Minimum Design Criteria (MDC) and generates OpenCode leaderboard feedback.
-parameters:
+input_schema:
   type: object
   properties:
     task_number:
